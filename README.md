@@ -41,7 +41,7 @@ SO THAT my website can handle large amounts of unstructured data
 
 
 ## Video
-Check out the [walk-through video](https://drive.google.com/file/d/1clHnZijIo4UleTlDACSZyh2ulOsC25y_/view).
+Check out the [walk-through video](https://drive.google.com/file/d/1clHnZijIo4UleTlDACSZyh2ulOsC25y_/view?usp=sharing).
 
 
 ## Installation
