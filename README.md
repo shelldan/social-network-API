@@ -47,7 +47,7 @@ Check out the [walk-through video]().
 ## Installation
 To clone the repo:
 ```
-git clone https://github.com/shelldan/model-view-controller.git
+git clone https://github.com/shelldan/social-network-API.git
 ``` 
 Run 'npm install' to install dependencies
 
