@@ -31,17 +31,17 @@ SO THAT my website can handle large amounts of unstructured data
 ```
 
 ## Screenshot
-![](public/assets/home.png)
+![](images/users.png)
 
-![](public/assets/login.png)
+![](images/thoughts.png)
 
-![](public/assets/dashboard.png)
+![](images/friends.png)
 
-![](public/assets/comment.png)
+![](images/reactions.png)
 
 
 ## Video
-Check out the [walk-through video]().
+Check out the [walk-through video](https://drive.google.com/file/d/1clHnZijIo4UleTlDACSZyh2ulOsC25y_/view).
 
 
 ## Installation
