@@ -1,4 +1,3 @@
-const { Module } = require('module');
 const { Thought, User } = require('../models');
 
 module.exports = {
@@ -8,7 +7,7 @@ module.exports = {
             .catch((err) => res.status(500).json(err));
     },
     getSingleThought(req, res) {
-        Thought.findOne({ _id: req.params.videoId })
+        Thought.findOne({ _id: req.params.thoughtId })
             .then((thought) => 
                 !thought
                     ? res.status(404).json({ message: 'No thought with that ID'})
@@ -16,12 +15,13 @@ module.exports = {
             )
             .catch((err) => res.status(500).json(err));
     },
+    // create a new thought
     createThought(req, res) {
         Thought.create(req.body)
             .then((thought) => {
-                return User.findOneAndDelete(
+                return User.findOneAndUpdate(
                     { _id: req.body.userId },
-                    { $addToSet: { thoughts: thoughts._id } },
+                    { $addToSet: { thoughts: thought._id } },//thought is object from the req.body, and I want to get the user _id (property)
                     { new: true}
                 );
             })
@@ -77,7 +77,7 @@ module.exports = {
     addThoughtReaction(req, res) {
         Thought.findOneAndUpdate(
             { _id: req.params.thoughtId },
-            { $addToSet: { response: req.body }},
+            { $addToSet: { reactions: req.body }},
             { runValidators: true, new: true }
         )
             .then((thought) => 
